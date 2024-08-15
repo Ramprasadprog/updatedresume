@@ -1,0 +1,157 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px; /* Base font size */
+}
+
+header, footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 70%; /* Consistent width for header and footer */
+    margin: 0 auto; /* Center-align the header and footer */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+header {
+    margin-bottom: 20px;
+    position: relative; /* Add space between header and main content */
+}
+
+footer {
+    margin-top: 20px; /* Add space between main content and footer */
+      height: 10%;
+      text-align: center;
+   margin-bottom: 20px;
+}
+
+.container {
+    width: 70%; /* Consistent width for main content */
+    margin: 0 auto; /* Center-align the container */
+    padding: 10px; /* Padding around content */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.info {
+    text-align: center; /* Center-align text in the info section */
+}
+
+.info .profile {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    justify-content: center;
+    gap: 30px;
+    justify-content: space-between;
+    height: 35%;
+
+}
+
+.profile img {
+    width: 120px; /* Profile picture width */
+    height: 140px; /* Profile picture height */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+
+.info h1 {
+    margin: 10px 0; /* Margin for spacing */
+    font-size: 2.2em; /* Adjusted font size for header */
+}
+
+.info p {
+    margin: 4px 0; /* Adjusted margin for better spacing */
+    font-size: 0.9em; /* Adjusted font size */
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px; /* Reduced padding */
+    margin: 15px 0; /* Margin for spacing */
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Space for bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Container width for medium screens */
+        padding: 8px; /* Reduced padding */
+    }
+
+    header, footer {
+        width: 90%; /* Header and footer width for medium screens */
+    }
+
+    .profile img {
+        width: 70px; /* Adjusted width */
+        height: 70px; /* Adjusted height */
+    }
+
+    .info h1 {
+        font-size: 1.8em; /* Adjusted font size */
+    }
+
+    .info p {
+        font-size: 0.8em; /* Adjusted font size */
+    }
+
+    h2 {
+        font-size: 1.6em; /* Adjusted font size */
+    }
+
+    ul {
+        margin-left: 15px; /* Adjusted margin */
+    }
+}
+
+/* Media Queries for Very Small Devices */
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Full width for very small screens */
+        padding: 5px; /* Reduced padding */
+    }
+
+    header, footer {
+        width: 100%; /* Full width for very small screens */
+    }
+
+    .profile img {
+        width: 60px; /* Adjusted width */
+        height: 60px; /* Adjusted height */
+    }
+
+    .info h1 {
+        font-size: 1.6em; /* Adjusted font size */
+    }
+
+    .info p {
+        font-size: 0.7em; /* Adjusted font size */
+    }
+
+    h2 {
+        font-size: 1.4em; /* Adjusted font size */
+    }
+
+    ul {
+        margin-left: 10px; /* Adjusted margin */
+    }
+}
